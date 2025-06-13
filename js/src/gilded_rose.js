@@ -60,3 +60,8 @@ function update_quality() {
     }
   }
 }
+
+module.exports = {
+  items,
+  update_quality
+};
