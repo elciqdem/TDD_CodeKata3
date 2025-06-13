@@ -1,3 +1,12 @@
+
+export class Item {
+  constructor(name, sellIn, quality) {
+    this.name = name;
+    this.sell_in = sellIn;
+    this.quality = quality;
+  }
+}
+
 const { Item } = require("./item");
 
 const MAX_QUALITY = 50;
@@ -45,7 +54,7 @@ function updateItem(item) {
   }
 }
 
-function update_quality(items) {
+export function update_quality(items) {
   for (const item of items) {
     updateItem(item);
   }

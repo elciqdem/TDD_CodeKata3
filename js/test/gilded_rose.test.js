@@ -1,3 +1,5 @@
+import { Item, update_quality } from "../src/gilded_rose.js";
+
 const { Item } = require("../src/item");
 const { items, update_quality } = require("../src/gilded_rose");
 
