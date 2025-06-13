@@ -1,12 +1,12 @@
 const { Item } = require("../src/item");
-const { items, update_quality } = require("../src/gilded_rose");
+const { items, update_quality } = require("../src/gilded_rose_refactored");
 
 function executeDay(startItem) {
-  items.length = 0;      // reset inventory
-  items.push(startItem);
-  update_quality();
-  return items[0];
+  const inventory = [startItem];
+  update_quality(inventory);
+  return inventory[0];
 }
+
 
 describe("Gilded Rose rules", () => {
   test("standard item quality and sell in drop by one", () => {
