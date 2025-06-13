@@ -10,7 +10,6 @@
   },
   "repository": {
     "type": "git",
-    "type": "module",
     "url": "git+https://github.com/elciqdem/TDD_CodeKata3.git"
   },
   "keywords": [],
